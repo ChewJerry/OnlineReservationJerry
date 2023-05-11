@@ -7,7 +7,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent">>
+
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -15,7 +16,9 @@
             android:orientation="vertical" >
 
 
-
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -45,14 +48,14 @@
                     android:id="@+id/textViewMobile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Mobile Number:" />
+                    android:text="@string/mobile_number" />
 
                 <EditText
                     android:id="@+id/editTextMobile"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:ems="30"
-                    android:inputType="text" />
+                    android:inputType="number" />
             </LinearLayout>
 
             <LinearLayout
@@ -65,7 +68,7 @@
                     android:id="@+id/textViewSizeGrp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Size of group:" />
+                    android:text="@string/size_of_group" />
 
                 <EditText
                     android:id="@+id/editTextSizeGrp"
@@ -90,20 +93,30 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <RadioGroup
+                android:id="@+id/radioGroupSmoke"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-            <CheckBox
-                android:id="@+id/checkBoxSmoking"
+
+
+                <RadioButton
+                android:id="@+id/radioButtonSmoking"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Smoking" />
+                android:text="@string/smoking" />
 
-            <CheckBox
-                android:id="@+id/checkBoxNonSmoking"
+               <RadioButton
+                android:id="@+id/radioButtonNonSmoking"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Non-smoking" />
+                android:text="@string/non_smoking" />
+            </RadioGroup>
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -123,6 +136,10 @@
                 android:layout_height="wrap_content"
                 android:text="@string/reset"/>
         </LinearLayout>
+
+
+
+
 
 
 
