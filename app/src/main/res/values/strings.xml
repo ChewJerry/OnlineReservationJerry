@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Online Reservation</string>
+    <string name="name">Name:</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="reset">RESET</string>
+</resources>
