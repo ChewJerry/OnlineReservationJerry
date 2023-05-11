@@ -1,4 +1,4 @@
-<resources> //strings
+<resources> //strings 1
     <string name="app_name">Online Reservation</string>
     <string name="name">Name:</string>
     <string name="enter_your_name">Enter your name</string>
